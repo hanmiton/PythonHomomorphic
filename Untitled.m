@@ -1,2 +1,2 @@
-py.bin12.principal(7,7)
+py.bin24.principal(8,1)
 

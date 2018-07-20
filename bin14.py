@@ -29,8 +29,11 @@ def principal(m1,m2):
 	key = map(keygen,boln1)
 
 	boln1Encrypt = map(encrypt,key,boln1)
+	boln2Encrypt = map(encrypt,key,boln2)
 
-	return boln1Encrypt
+	
+	
+	return boln2Encrypt
 
 def keygen(n):
 	key = random.getrandbits(P)

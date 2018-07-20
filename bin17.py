@@ -29,8 +29,21 @@ def principal(m1,m2):
 	key = map(keygen,boln1)
 
 	boln1Encrypt = map(encrypt,key,boln1)
+	boln2Encrypt = map(encrypt,key,boln2)
 
-	return boln1Encrypt
+	sumEncrypt = map(add,boln1Encrypt,boln2Encrypt)
+	mulEnctypt = map(mult,boln1Encrypt, boln2Encrypt)
+	
+	resSuma = map (decrypt, key, sumEncrypt)
+
+	return mulEnctypt
+		
+def quot(z, p):
+        # http://stackoverflow.com/questions/3950372/round-with-integer-division
+        return (z + p // 2) // p
+        
+def mod(z, p):
+        return z - quot(z,p) * p
 
 def keygen(n):
 	key = random.getrandbits(P)

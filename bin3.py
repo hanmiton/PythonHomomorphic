@@ -52,4 +52,4 @@ if __name__ == '__main__':
     m1 = float(sys.argv[1])
     sys.stdout.write(str(bin(m1)))
     m2 = float(sys.argv[1])
-    sys.stdout.write(str(bin2(m2)))
+    sys.stdout.write(str(bin2(m2))
